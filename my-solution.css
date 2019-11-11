@@ -1,0 +1,139 @@
+.ex-1-square {
+    transition: background-color 2s;
+}
+
+.ex-1-square:hover {
+    background-color: red;
+}
+
+.ex-2-square {
+    transition: width 5s;
+}
+
+.ex-2-square:active {
+    width: 100%;
+}
+
+.ex-3-square {
+    transition: border-radius 3s;
+}
+
+.ex-3-square:hover {
+    border-radius: 50%;
+}
+
+.ex-4-square {
+    transition: opacity 4s;
+}
+
+.ex-4-square:hover {
+    opacity: 0;
+}
+
+/* alternativa con filter */
+/* .ex-4-square {
+    transition: filter 4s;
+}
+
+.ex-4-square:hover {
+    filter: opacity(0%);
+} */
+.ex-5-square {
+    transition: all 4s;
+}
+
+.ex-5-square:hover {
+    width: 120px;
+    height: 120px;
+}
+
+.ex-5-square:active {
+    width: 30px;
+    height: 30px;
+}
+
+.ex-6-img:hover {
+    filter: grayscale(100%);
+}
+
+.ex-7-img:hover {
+    transition: filter 4s;
+}
+
+.ex-7-img:hover {
+    filter: grayscale(100%);
+    /* secondo effetto???? */
+}
+
+.ex-8-img:hover {
+    transition: all 3s;
+}
+
+.ex-8-img:hover {
+    border-radius: 20px;
+    filter: grayscale(75%);
+    /* secondo effetto???? */
+}
+
+.ex-9-img:hover {
+    transition: all 3s;
+}
+
+.ex-9-img:hover {
+    border-radius: 20px;
+    filter: grayscale(75%);
+    transform: scale(1.5);
+    /* secondo effetto???? */
+}
+
+.ex-10-icon {
+    animation: 1s linear rotate-forever infinite;
+}
+
+@keyframes rotate-forever {
+    to {
+        transform: rotate(-360deg);
+    }
+}
+
+.ex-11-icon:hover {
+    animation: 2s linear rotate-and-back;
+}
+
+@keyframes rotate-and-back {
+    90% {
+        transform: rotate(290deg);
+    }
+
+    100% {
+        transform: rotate(0deg)
+    }
+}
+
+.ex-12-button:hover .ex-12-top-white {
+    animation: 3s linear go-and-back-top;
+}
+
+@keyframes go-and-back-top {
+    50% {
+        left: 70%;
+    }
+
+    100% {
+        left: 10%;
+    }
+}
+
+.ex-12-button:hover .ex-12-bottom-white {
+    animation: 3s linear go-and-back-bottom;
+}
+
+@keyframes go-and-back-bottom {
+    50% {
+        right: 70%;
+    }
+
+    100% {
+        right: 20%;
+    }
+}
